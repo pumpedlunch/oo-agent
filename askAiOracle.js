@@ -150,7 +150,7 @@ async function main(questionString) {
     const assertionString = `Question: ${questionString}. AI Agent's Answer: ${answer}`
 
     console.log(assertionString);
-    // assertTruthWithDefualts(assertionString);
+    assertTruthWithDefualts(assertionString);
 }
 
 main(questionString);
