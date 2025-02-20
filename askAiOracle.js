@@ -3,11 +3,11 @@ const dotenv = require("dotenv");
 const OpenAI = require("openai");
 dotenv.config();
 
-const RPC_URL = process.env.RPC_URL || "";
-const PRIVATE_KEY = process.env.PRIVATE_KEY || "";
-const CHATGPT_API_KEY = process.env.CHATGPT_API_KEY || "";
+const RPC_URL = process.env.RPC_URL;
+const PRIVATE_KEY = process.env.PRIVATE_KEY;
+const CHATGPT_API_KEY = process.env.CHATGPT_API_KEY;
 const openai = new OpenAI({
-    apiKey: "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",
+    apiKey: process.env.CHATGPT_API_KEY,
 });
 
 const OO_V3_ADDRESS = "0xFd9e2642a170aDD10F53Ee14a93FcF2F31924944"; //Ethereum Sepolia
